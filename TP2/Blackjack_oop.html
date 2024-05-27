@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+	<title>BlackJack</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google fonts CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+
+    <script src="https://kit.fontawesome.com/ca59f1ae59.js" crossorigin="anonymous"></script>
+	<script src="js/blackjack_object.js"></script>
+	<script src="js/blackjack_manager.js"></script>
+	<link rel="stylesheet" href="main2.css">
+  </head>
+
+  <body>
+	
+	<header>
+		<div class = "Title">
+			<h1 id="BLACKJACK">
+				BLACKJACK
+			</h1>
+		</div>
+		
+	</header>
+
+	<section id="game" >
+		<h2 id="dealer" >Dealer</h2>
+		<div id="dealerCards"></div>
+		<p id="dealerPoints" ></p>
+
+		
+		<h2 id="player">Player</h2>
+		<div id="playerCards"></div>
+		<p id="playerPoints"></p>
+
+	
+		<p id="winnerText"></p>
+		<p id="loserText"></p>
+      <button id="card" type="button" onclick="player_new_card()">Card</button>
+	  <button id="stand" type="button" onclick="dealer_finish()">Stand</button>
+      <button id="new_game" type="button" onclick="new_game()">New Game</button>
+	</section>
+
+
+    <section>
+      <script> window.onload = new_game();</script>
+    </section>
+    <footer></footer>
+
+  </body>
+
+</html> 

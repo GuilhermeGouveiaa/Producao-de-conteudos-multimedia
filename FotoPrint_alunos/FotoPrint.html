@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Family Photos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styling.css">
+    <script src="js/FotoPrint_manager.js"></script>
+    <script src="js/FotoPrint.js"></script>
+    <script src="js/DrawingObjects.js"></script>
+
+</head>
+
+
+<body bgcolor = "#917350">
+    
+    <div id="fotoPrint">
+        
+        <div id="panel">
+            <section id="buttons">
+                <button onclick="saveasimage();"> Save Image </button>
+                <!-- o br é so para por para baixo -->
+                <br>
+                <button onclick="remove();"> Delete </button>
+                <br>
+                <input type="button" value=" Mudar cor de fundo ">
+                <input type="color" value="#BB8C53" onchange = updateBgColor(this.value)>
+                <br>
+                <input type="button" value="Mudar cor de figuras">
+                <input type="color" value="#808080" onchange = updateFigColor(this.value)>
+                <br>
+            </section>
+            
+            <section id="selectableItems">
+                <canvas id="canvas2" width="1000" height="140" style="border:1px groove #000000;">
+                    Your browser doesn't recognize the canvas element 
+                </canvas>
+            </section>
+        </div>
+    
+        <section id="palette">
+            <canvas id="canvas" width="1200" height="400" style="border:1px groove #000000;">
+                Your browser doesn't recognize the canvas element
+            </canvas>
+        </section>
+        
+    </div>
+
+    <section>
+        <script> window.onload = main(); </script>
+    </section>
+
+</body>
+
+</html>

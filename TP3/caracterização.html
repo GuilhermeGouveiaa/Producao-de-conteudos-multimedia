@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt">
+    <meta charset="UTF-8">
+    <title>Caracterização - Questionário</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/02d7f884e6.js" crossorigin="anonymous"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main_caracterizacao.css">
+    
+    <!-- My JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+    </script>
+    <script src="questionario.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"
+        integrity="sha384-/Gm+ur33q/W+9ANGYwB2Q4V0ZWApToOzRuA8md/1p9xMMxpqnlguMvk8QuEFWA1B"
+        crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+
+    <header class="" id="header">
+
+        <div class="row">
+            <div>
+                <h1>Questionário</h1>
+                <h2>Pesquisa de Imagens	</h2>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="Caracterizacao">
+        <form name="caracterizacao" onsubmit="validateForm()" action="Tarefas.html">
+            <fieldset>
+
+                <legend>
+                    Caracterização
+                </legend>
+
+                <article  id="dp1">
+                    <h3 >1- Qual é a sua idade?*</h3>
+                    
+                    <input id="name1" type="radio" name="idade" value="menor 18">
+                    <label for="name1"> < 18 </label>
+
+                    <input id="name2" type="radio" name="idade" value="18-25">
+                    <label for="name2">18-25</label>
+
+                    <input id="name3" type="radio" name="idade" value="26-33">
+                    <label for="name3">26-33</label>
+
+                    <input id="name4" type="radio" name="idade" value="34-40">
+                    <label for="name4"> 34-40 </label>
+
+                    <input id="name5" type="radio" name="idade" value="maior 40" required>
+                    <label for="name5"> > 40 </label>
+
+                </article>
+
+                <article id="dp2">
+                    <h3> 2- Género:*</h3>
+                    <input id="fem" type="radio" name="sexo" value="feminino" required>
+                    <label for="fem">Feminino</label>
+
+                    <input id="masc" type="radio" name="sexo" value="masculino">
+                    <label for="masc">Masculino</label>
+
+                </article>
+
+                <article id="dp3">
+                    <h3 >3 - Com que frequência usa a Internet?</h3>
+                    <input id="diariamente" type="radio" name="internet" value="diariamente">
+                    <label for="diariamente">Diariamente</label>
+                    <br>
+                    <input id="algvezsem" type="radio" name="internet" value="algsemna">
+                    <label for="algvezsem"> Algumas vezes por semana</label>
+                    <br>
+                    <input id="algvezmes" type="radio" name="internet" value="algmes">
+                    <label for="algvezmes"> Algumas vezes por mês</label>
+                    <br>
+                    <input id="raramente" type="radio" name="internet" value="raramente">
+                    <label for="raramente"> Raramente </label>
+                    <br>
+                    <input id="nunca" type="radio" name="internet" value="nunca">
+                    <label for="nunca"> Nunca </label>
+                    <br>
+
+                </article>
+
+                <article id="dp4">
+                    <h3 >4 – Indique,	por	ordem	de	preferência,	os	Web	Browsers	que	mais	utiliza.	Pode	indicar	3.	
+                        Utilize	valores	de	1	a	3,	sendo	1	o	mais	preferido	e	3	o	menos. **</h3>
+                    <input id="Chrome" type="number" min="0" max="3" name="web1" value="number" onchange="checkBrowser(this)" required>
+                    <label for="Chrome">Chrome</label>
+                    <br>
+                    <input id="Firefox" type="number" min="0" max="3" name="web2" value="number" onchange="checkBrowser(this)" required>
+                    <label for="Firefox"> Firefox</label>
+                    <br>
+                    <input id="InternetE" type="number" min="0" max="3" name="web3" value="number" onchange="checkBrowser(this)" required>
+                    <label for="InternetE">Internet Explorer</label>
+                    <br>
+                    <input id="Opera" type="number" min="0" max="3" name="web4" value=number" onchange="checkBrowser(this)" required>
+                    <label for="Opera"> Opera </label>
+                    <br>
+                    <input id="Safari" type="number" min="0" max="3" name="web5" value="number" onchange="checkBrowser(this)" required>
+                    <label for="Safari"> Safari </label>
+                    <br>
+
+                </article>
+
+        <article id = "dp5">
+            <h3>5 - Conhece	outros	sites	de	pesquisa	de	imagem?</h3>
+            <input onclick="Write_Text()" id = "sim" type="radio" name="pesquisa" value="Sim">
+            <label for = "sim"> Sim </label>
+            <br>
+            <input onclick="Write_Text()" id = "nao" type="radio" name="pesquisa" value="Não">
+            <label for = "nao"> Não </label>
+            <br>
+        </article>
+
+         <article  id="dp5">
+                    <h3 >6 - Quais?</h3>
+                    <input id="message"  type="text" name="quais">
+        </article>
+
+                <div id="next">
+                    <input id="sub" type="submit" name="submit" value="Next" onclick="checkBrowser2()">
+                </div>
+
+            </fieldset>
+        </form>
+
+    </section>
+
+</body>
+
+</html>

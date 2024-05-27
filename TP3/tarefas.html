@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt">
+    <meta charset="UTF-8">
+    <title>Tarefas - Questionário</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/02d7f884e6.js" crossorigin="anonymous"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main_tarefas.css">
+    <!-- My JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="questionario.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"
+        integrity="sha384-/Gm+ur33q/W+9ANGYwB2Q4V0ZWApToOzRuA8md/1p9xMMxpqnlguMvk8QuEFWA1B"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<header class="" id="header">
+
+    <div class="row">
+        <div>
+            <h1>Questionário</h1>
+            <h2>Pesquisa de Imagens	</h2>
+        </div>
+    </div>
+
+</header>
+
+<body>
+
+    <section id="Tarefas">
+        <form name="tarefas" onsubmit="validateTarefas()" action="avaliação_global.html">
+            <fieldset>
+                <legend>Tarefas
+                    <div>
+                        Por	favor,	realiza as	seguintes	tarefas	e	descreva-nos	os	resultados	obtidos.   
+                    </div>
+                </legend>
+                
+                <article id="t1">
+                    <h3>Tarefa	1 - Explorar</h3>
+                    <p>Explore o site livremente e indique se encontrou algum erro ou se sentiu alguma dificuldade
+                        em perceber a funcionalidade das opções.</p>
+                    <div>
+                        <input id = "Explorar" type="text" name="tarefa1">
+                    </div>
+                </article>
+
+                <article id="t2">
+                    <h3 >Tarefa 2 – Pesquisa Categorias</h3>
+                    <div>
+                        <p>Escolha a opção de pesquisa por palavra chave, selecione uma categoria à sua escolha e observe os resultados.</p>
+                        <p>Que dificuldades encontrou?</p>
+                    </div>
+                    
+                    <div>
+                        <input id = "Categorias" type="text" name="tarefa2">
+                    </div>
+                </article>
+
+                <h3>Tarefa 3 – Pesquisa Cor </h3>
+                <article id="t3">
+                    <p>Escolha a opção de pesquisa por cor dominante, selecione uma cor à sua escolha e observe
+                        os
+                        resultados.</p>
+                    <p>Que dificuldades encontrou?</p>
+                    <div>
+                        <input id = "Cor" type="text" name="tarefa3">
+                    </div>
+                </article>
+
+                <h4 >Tarefa 4 – Pesquisa Imagens Semelhantes </h4>
+                <article id="t4">
+                    <p>Escolha a opção de pesquisa por imagens semelhantes, selecione uma imagem à sua
+                        escolha e
+                        observe os resultados.</p>
+                    <p>Que dificuldades encontrou?</p>
+                    <div>
+                        <input id = "Imagens" type="text" name="tarefa4">
+                    </div>
+
+                    <p>Qual o tipo de pesquisa que acha mais adequado?</p>
+                    <div>
+                        <input id = "Imagens2" type="text" name="tarefa5">
+                    </div>
+                </article>
+
+                <div  id="next">
+                    <input id="sub" type="submit" name="onsubmit" value="Next">
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>

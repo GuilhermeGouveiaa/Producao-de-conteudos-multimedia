@@ -1,0 +1,82 @@
+body{
+  font-family: Helvetica;
+  text-align: center;
+  background-color: #9E9CA6;
+}
+
+.navbar-toggler{
+    width: 47px;
+    height: 34px;
+    background-color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.navbar-toggler:hover{
+  background-color:#9E9CA6;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  background: #000000;
+  transition: all 0.5s ease;
+}
+
+.change .bar1 {
+  transform: translate(0px, 8px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0px, -8px) rotate(45deg);
+}  
+
+.nav-item:hover{
+  background-color:#9E9CA6;
+}
+.image-wrapper{
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+  padding: 70px;
+  padding-block-end: 0px;
+}
+.image-wrapper figcaption{
+  display: inline-flex;
+  text-align: center;
+  padding: 40px;
+}
+
+header{
+  background-color: #010101;
+}
+
+.row{
+  padding-top: 40px;
+}
+
+.carousel-inner{
+  padding: 40px;
+}
+
+.text-warning{
+  color: #ffffff;
+}
+
+.image-google{
+  padding-block-end: 30px;
+}
+
+.image-amazon{
+  padding-block-end: 30px;
+}
+
+.image-microsoft{
+  padding-top: 30px;
+}
+
+.image-tencent{
+  padding-top: 20px;
+}

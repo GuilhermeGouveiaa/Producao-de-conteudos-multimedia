@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.canvas {
+    position: absolute;
+    cursor: crosshair;
+}
+
+.canvas2 {
+    position: absolute;
+    cursor: crosshair;
+
+}
+
+#fotoPrint {
+    position: relative;
+    top: 40px;
+}
+
+#panel {
+    position: relative;
+}
+
+#buttons {
+    position: absolute;
+    left: 100px;
+}
+
+#selectableItems {
+    position: absolute;
+    left: 300px;
+}
+
+#palette {
+    position: absolute;
+    left: 100px;
+    top: 160px;
+}
+
+.center {
+    display: flex;
+    align-items: center
+}

@@ -1,0 +1,69 @@
+header{
+    background-color: rgb(120, 26, 26);
+    
+}
+#BLACKJACK{
+    margin: 0px;
+}
+.Title{
+    text-align: center;
+}
+#game{
+    margin-top: 0px;
+    text-align: center;
+    background-color: rgb(23, 94, 23);
+    
+}
+
+#dealer{
+    margin-top: 0px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#dealerPoints{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#player{
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#playerPoints{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#cardimg{
+    
+    width:20%;
+    height: auto;
+    padding: 5px;
+}
+
+#winnerText{
+
+    font-size: 30px;
+}
+
+#loserText{
+
+    font-size: 30px;
+
+}
+#card, #stand, #new_game {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #b92500;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+  

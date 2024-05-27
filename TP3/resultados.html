@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt">
+    <meta charset="UTF-8">
+    <title>QuestionÃ¡rio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/02d7f884e6.js" crossorigin="anonymous"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main_resultados.css">
+    <!-- My JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="questionario.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js" integrity="sha384-/Gm+ur33q/W+9ANGYwB2Q4V0ZWApToOzRuA8md/1p9xMMxpqnlguMvk8QuEFWA1B" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1> Resultados </h1>
+    </header>
+    <section class="resultados" id="resultados">
+        <div><script>getdataForm();</script></div>
+    </section>
+
+    <div class="grafico1">
+        <canvas width="200" height="200"></canvas>
+        <ul class="m-5">
+            <li style="list-style: none; border-left: 20px solid #0a9627; padding: 5px;"> <18</li>
+            <li style="list-style: none; border-left: 20px solid #960A2C; padding: 5px;">18-25</li>
+            <li style="list-style: none; border-left: 20px solid #332E2E; padding: 5px;">26-33</li>
+            <li style="list-style: none; border-left: 20px solid #F73809; padding: 5px;">34-40</li>
+            <li style="list-style: none; border-left: 20px solid #3574F2; padding: 5px;">>40</li>
+        </ul>
+        <script>anychart();</script>
+    </div> 
+    <div class="row d-flex justify-content-center">
+        <canvas id="myCanvas"></canvas>
+        <div class="m-5 segundo">
+            <ul class="m-5">
+                <li style="list-style: none; border-left: 20px solid #0a9627; padding: 5px;">1</li>
+                <li style="list-style: none; border-left: 20px solid #960A2C; padding: 5px;">2</li>
+                <li style="list-style: none; border-left: 20px solid #332E2E; padding: 5px;">3</li>
+                <li style="list-style: none; border-left: 20px solid #F73809; padding: 5px;">4</li>
+                <li style="list-style: none; border-left: 20px solid #3574F2; padding: 5px;">5</li>
+            </ul>
+        </div>
+        <script>chart2();</script>
+        
+    </div>    
+    
+    <div id="next">
+        <button id="buttonNext" value="Clear" onclick="clearLocalStorage()">
+            Clear
+        </button>
+        <ul class="pagination pagination-sm justify-content-center">
+            <li class="page-item"><a class="page-link" href="introdução.html">New Answer</a></li>
+        </ul>
+    </div>
+</body>
+</html>

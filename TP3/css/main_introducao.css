@@ -1,0 +1,59 @@
+header {
+    background-color: #09A603;
+    color: old#262626;
+    text-shadow: 2px 2px 5px #F2F2F2;
+    height: 8vh;
+    object-fit: cover;
+}
+
+section {
+    display: block;
+    background-color: #262626;
+    color: #F2F2F2;
+    text-shadow: 3px 2px 5px #3574F2;
+    height: 92vh;
+    object-fit: cover;
+    padding-left: 30px;
+}
+
+
+section div {
+    padding-top: 30px;
+}
+
+section div p {
+    text-align: justify;
+    margin: 0;
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+hr {
+    margin: 0;
+    border: 0;
+    border-top: 10px solid #223A59;
+}
+
+
+/* Color Theme Swatches in Hex */
+.UI/UX-1-hex {
+    color: #3574F2;
+}
+
+.UI/UX-2-hex {
+    color: #223A59;
+}
+
+.UI/UX-3-hex {
+    color: #09A603;
+}
+
+.UI/UX-4-hex {
+    color: #F2F2F2;
+}
+
+.UI/UX-5-hex {
+    color: #262626;
+}

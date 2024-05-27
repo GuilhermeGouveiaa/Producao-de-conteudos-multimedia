@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt">
+    <meta charset="UTF-8">
+    <title>Avaliacao Global - Questionário</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <script src="https://kit.fontawesome.com/02d7f884e6.js" crossorigin="anonymous"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/main_avaliacaoGlobal.css">
+    <!-- My JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="questionario.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"
+        integrity="sha384-/Gm+ur33q/W+9ANGYwB2Q4V0ZWApToOzRuA8md/1p9xMMxpqnlguMvk8QuEFWA1B"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="" id="header">
+
+        <div class="row">
+            <div class="col text-left text-black mt-3 mb-2 ml-3">
+                <h1>Questionário</h1>
+                <h2>Pesquisa de Imagens</h2>
+            </div>
+        </div>
+
+
+    </header>
+
+    <hr>
+
+    <section id="Avaliacao">
+        <form name="avaliacao_global" onsubmit="validate_avaliação()" action="resultados.html">
+            <fieldset>
+                <legend>Avaliação Global</legend>
+                <article id="av1">
+                    <h3>1- Para cada	par	de	adjetivos,	selecione a	opção	que	melhor	descreve	a	sua	experiência	de	
+                        utilização	deste	site.</h3>
+                    <div>
+                        <label for = "adjetivo1">Fantástica</label>
+                        <input id = "adjetivo1" type="radio" name="adjetivo1" value="1">                        
+                        <input id = "adjetivo2" type="radio" name="adjetivo1" value="2">           
+                        <input id = "adjetivo3" type="radio" name="adjetivo1" value="3">           
+                        <input id = "adjetivo4" type="radio" name="adjetivo1" value="4">                       
+                        <input id = "adjetivo5" type="radio" name="adjetivo1" value="5">          
+                        <input id = "adjetivo6" type="radio" name="adjetivo1" value="6">         
+                        <input id = "adjetivo7" type="radio" name="adjetivo1" value="7">
+                        <label for = "adjetivo7">Horrível</label>
+                        <br>
+            
+                    </div>
+
+                    <div>
+                        <label for = "adjetivo8">Estimulante</label>
+                        <input id = "adjetivo8" type="radio" name="adjetivo2" value="1">
+                        <input id = "adjetivo9" type="radio" name="adjetivo2" value="2">
+                        <input id = "adjetivo10" type="radio" name="adjetivo2" value="3">
+                        <input id = "adjetivo11" type="radio" name="adjetivo2" value="4">
+                        <input id = "adjetivo12" type="radio" name="adjetivo2" value="5">
+                        <input id = "adjetivo13" type="radio" name="adjetivo2" value="6">
+                        <input id = "adjetivo14" type="radio" name="adjetivo2" value="7">
+                        <label for = "adjetivo14">Aborrecida</label>
+                    </div>
+
+                    <div>
+                        <label for = "adjetivo15">Gratificante</label>
+                        <input id = "adjetivo15" type="radio" name="adjetivo3" value="1">
+                        <input id = "adjetivo16" type="radio" name="adjetivo3" value="2">
+                        <input id = "adjetivo17" type="radio" name="adjetivo3" value="3">
+                        <input id = "adjetivo18" type="radio" name="adjetivo3" value="4">
+                        <input id = "adjetivo19" type="radio" name="adjetivo3" value="5">
+                        <input id = "adjetivo20" type="radio" name="adjetivo3" value="6">
+                        <input id = "adjetivo21" type="radio" name="adjetivo3" value="7">
+                        <label for = "adjetivo21">Frustrante</label>
+                    </div>
+                    <div>
+                        <label for = "adjetivo22">Fácil</label>
+                        <input id = "adjetivo22" type="radio" name="adjetivo4" value="1">
+                        <input id = "adjetivo23" type="radio" name="adjetivo4" value="2">
+                        <input id = "adjetivo24" type="radio" name="adjetivo4" value="3">
+                        <input id = "adjetivo25" type="radio" name="adjetivo4" value="4">
+                        <input id = "adjetivo26" type="radio" name="adjetivo4" value="5">             
+                        <input id = "adjetivo27" type="radio" name="adjetivo4" value="6">   
+                        <input id = "adjetivo28" type="radio" name="adjetivo4" value="7">
+                        <label for = "adjetivo28">Díficil</label>
+                    </div>
+
+                </article>
+
+                <article id="av2">
+                    <h3>2- Como	classifica o	resultado obtido	pela pesquisa	por	Categoria (1	significa “Mau” e	5	
+                        significa	“Excelente”)? *
+                    </h3>
+                    
+                    <label for = "avcategoria1">Mau</label>
+                    <input id = "avcategoria1" type="radio" name="avcategoria" value="1">
+    
+                    <input id = "avcategoria2" type="radio" name="avcategoria" value="2">
+                
+                    <input id = "avcategoria3" type="radio" name="avcategoria" value="3">
+    
+                    <input id = "avcategoria4" type="radio" name="avcategoria" value="4">
+    
+                    <input id = "avcategoria5" type="radio" name="avcategoria" value="5" required>
+                    <label for = "avcategoria5">Excelente</label>
+                </article>
+
+                <article id="av3">
+                    <h3>2- Como	classifica o	resultado obtido	pela pesquisa	por	Categoria (1	significa “Mau” e	5	
+                        significa	“Excelente”)? *
+                    </h3>
+                    <label for = "avcor1">Mau</label>
+                    <input id = "avcor1" type="radio" name="avcor" value="1">
+    
+                    <input id = "avcor2" type="radio" name="avcor" value="2">
+                
+                    <input id = "avcor3" type="radio" name="avcor" value="3">
+    
+                    <input id = "avcor" type="radio" name="avcor" value="4">
+    
+                    <input id = "avcor5" type="radio" name="avcor" value="5" required>
+                    <label for = "avcor5">Excelente</label>
+                </article>
+
+                <article id="av4">
+                    <h3>3- Como	classifica	o	resultado obtido	pela	pesquisa por	Cor (1	significa “Mau” e	5	significa	
+                        “Excelente”)? *
+                    </h3>
+                    
+                    <label for = "avr1">Mau</label>
+                    <input id = "avr1" type="radio" name="avr" value="1">
+    
+                    <input id = "avr2" type="radio" name="avr" value="2">
+                
+                    <input id = "avr3" type="radio" name="avr" value="3">
+    
+                    <input id = "avr4" type="radio" name="avr" value="4">
+    
+                    <input id = "avr5" type="radio" name="avr" value="5" required>
+                    <label for = "avr5">Excelente</label>
+                </article>
+
+                <article id="av5">
+                    <h3>4- Como	classifica	o	resultado	obtido	pela pesquisa	por	Imagens	Semelhantes (1	significa
+                        “Mau” e	5	significa	“Excelente”)? *
+                    </h3>
+                    <label for = "avu1">Pouca</label>
+                    <input id = "avu1" type="radio" name="avu" value="1">
+    
+                    <input id = "avu2" type="radio" name="avu" value="2">
+                
+                    <input id = "avu3" type="radio" name="avu" value="3">
+    
+                    <input id = "avu4" type="radio" name="avu" value="4">
+    
+                    <input id = "avu5" type="radio" name="avu" value="5" required>
+                    <label for = "avu5">Muita</label>
+                </article>
+
+                <article id="av6">
+                    <h3>5- Como	classifica	a	utilidade	da	pesquisa	por	Imagens	Semelhantes (1	significa “Pouca” e	5	
+                        significa	“Muita”)? *
+                    </h3>
+                    
+                    <label for = "avs1">Mau</label>
+                    <input id = "avs1" type="radio" name="avs" value="1">
+    
+                    <input id = "avs2" type="radio" name="avs" value="2">
+                
+                    <input id = "avs3" type="radio" name="avs" value="3">
+    
+                    <input id = "avs4" type="radio" name="avs" value="4">
+    
+                    <input id = "avs5" type="radio" name="avs" value="5" required>
+                    <label for = "avs5">Excelente</label>
+                    </article>
+
+                <article id="av7">
+                    <h3>6- Como	classifica o sistema	de	navegação	do	site (1	significa “Mau” e	5	significa	
+                        “Excelente”)? *
+                    </h3>
+                    <label for = "avd1">Mau</label>
+                    <input id = "avd1" type="radio" name="avd" value="1">
+    
+                    <input id = "avd2" type="radio" name="avd" value="2">
+                
+                    <input id = "avd3" type="radio" name="avd" value="3">
+    
+                    <input id = "avd4" type="radio" name="avd" value="4">
+    
+                    <input id = "avd5" type="radio" name="avd" value="5" required>
+                    <label for = "avd5">Excelente</label>
+                </article>
+
+                <p>Obrigada pela sua colaboração!</p>
+
+                <p>* Questões de resposta obrigatória.</p>
+
+                <p>** Questão de resposta obrigatória (pelo menos uma preferência).</p>
+
+                <div class="mb-3" id="next">
+                    <input id="sub" type="submit" name="onsubmit" value="Next">
+                </div>
+
+            </fieldset>
+        </form>
+    </section>
+
+    <hr>
+
+</body>
+
+</html>
